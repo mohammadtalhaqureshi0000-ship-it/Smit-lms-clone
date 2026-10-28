@@ -1,21 +1,21 @@
 import React from 'react'
-// import Navbar from '../components/Navbar'
-import PrimarySearchAppBar from '../components/Appbar'
-import { NavLink } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import BasicCard from '../components/Card';
+// import PrimarySearchAppBar from '../components/Appbar'
+// import { NavLink } from 'react-router-dom'
 
 const Home = () => {
   return (
+    <div className='bg-gray-900 h-screen'>
       <div>
-      <PrimarySearchAppBar />
-      <NavLink to="/dashboard">
 
-      <div className=' border-2 w-30 text-center p-5  m-5 bg-amber-500 text-amber-50 hover:bg-amber-300'>
-      
-        Dashboard
+      <Navbar />
       </div>
-      </NavLink>
+      <div className='mt-10 w-50'>
+      <BasicCard  />
+      </div>
     </div>
-  )
+  );
 }
 
 export default Home
